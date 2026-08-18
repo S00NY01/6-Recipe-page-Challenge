@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+
+    --Font-size-P: 1rem;
+
+    --Young-font-family: "Young Serif", serif;
+    --Young-weight: 400;
+
+    --Outfit-font-family: "Outfit", sans-serif;
+
+    --margin: 2.187rem;
+    --margin-inline-start: 1.5rem;
+    --padding-block: 1.25rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 23.437rem;
+    background-color: var(--White)
+}
+
+.main-img img {
+    width: 100%;
+    margin-block-end: var(--margin);
+}
+
+.main-content {
+    margin-inline: var(--margin);
+}
+
+.main-content .omelette-recipe {
+    color: var(--Stone-900);
+    font-family: var(--Young-font-family);
+    font-size: var(--margin);
+    font-weight: var(--Young-weight);
+    line-height: var(--margin);
+    margin-block-end: var(--margin);
+
+}
+
+.main-content .description {
+    color: var(--Stone-600);
+    font-family: var(--Outfit-font-family);
+    margin-block-end: var(--margin);
+    margin-inline-end: -0.375rem;
+}
+
+.main-content .preparation-section {
+    background-color: var(--Rose-50);
+    padding: 1.875rem;
+    border-radius: 0.625rem;
+    font-family: var(--Outfit-font-family);
+    margin-block-end: var(--margin);
+}
+
+
+.preparation-section .preparation-time {
+    color: var(--Rose-800);
+    font-size: var(--margin-inline-start);
+    font-weight: 600;
+    margin-block-end: var(--margin-inline-start);
+
+}
+
+/* .preparation-time ol li {
+    color: red !important;
+} */
+
+.preparation-section ol {
+    margin-inline-start: var(--margin-inline-start);
+}
+
+li {
+    padding-inline-start: var(--Font-size-P);
+}
+
+.preparation-section ol li {
+    color: var(--Rose-800);
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-block-end: var(--padding-block);
+}
+
+.preparation-section ol li b,
+.preparation-section ol li span {
+    color: var(--Stone-900);
+}
+
+
+.preparation-section ol li:first-of-type {
+    line-height: var(--margin-inline-start);
+}
+
+.preparation-section ol li:last-of-type {
+    margin-block-end: 0px;
+}
+
+.section:not(:last-child) {
+    border-bottom: 0.031rem solid var(--Stone-150);
+    margin-block-end: var(--margin);
+}
+
+.section h2 {
+    color: var(--Brown-800);
+    font-family: var(--Young-font-family);
+    font-weight: 400;
+    margin-block-end: var(--margin);
+}
+
+.section ol li {
+    list-style-position: outside;
+    color: var(--Brown-800);
+    margin-inline-start: var(--padding-block);
+    font-family: var(--Outfit-font-family);
+    margin-block-end: var(--Font-size-P);
+
+}
+
+.section ol li:last-of-type {
+    margin-block-end: var(--margin);
+
+}
+
+.ingredients-info ol li {
+    list-style-type: square;
+}
+
+.section ol li b,
+.section ol li span {
+    color: var(--Stone-600);
+}
+
+.main-content hr {
+    color: var(--Rose-50);
+    margin-block-end: var(--margin);
+}
+
+.nutrition-info .nutrition-description {
+    color: var(--Stone-600);
+    font-family: var(--Outfit-font-family);
+    padding-inline-end: 0.875rem;
+    margin-block-end: var(--margin);
+}
+
+
+
+.nutrition-info table {
+    width: 100%;
+    font-family: var(--Outfit-font-family);
+    text-align: left;
+    margin-block-end: var(--margin);
+    border-collapse: collapse;
+}
+
+.nutrition-info table th {
+    color: var(--Stone-600);
+    font-weight: 400;
+    padding-inline-start: var(--margin-inline-start);
+    padding-block: var(--padding-block);
+
+}
+
+.nutrition-info table td {
+    color: var(--Brown-800);
+    font-weight: 600;
+    padding-inline-start: var(--margin-inline-start);
+    padding-block-end: var(--padding-block);
+
+}
+
+.nutrition-info table tr:not(:last-child) {
+    border-bottom: 0.031rem solid var(--Stone-150);
+}
+
+@media screen and (min-width: 23.75rem) {
+    body {
+        background-color: var(--Stone-100);
+    }
+
+    .container {
+        width: 46.875rem;
+        margin-block: 4.687rem;
+        border-radius: 0.625rem;
+    }
+
+    .main-img {
+        border-radius: 0.937rem;
+
+    }
+
+    .main-img img {
+        padding-inline: var(--margin);
+        padding-block: var(--margin);
+    }
+
+    .main-content .description {
+        padding-inline-end: 0.437rem;
+    }
+}
