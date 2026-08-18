@@ -27,7 +27,7 @@ Mobile:
 ### Links
 
 - Solution URL: [https://github.com/S00NY01/Recipe-page-Challenge]
-- Live Site URL: [https://s00ny01.github.io/Recipe-page-Challenge/]
+- Live Site URL: [https://s00ny01.github.io/6-Recipe-page-Challenge/]
 
 ## My process
 
